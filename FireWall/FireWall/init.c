@@ -1,5 +1,11 @@
-#include "common.h"
 
+#include "common.h"
+#include "wall.h"
+#include "crc32.h"
+#include "memtrace.h"
+#include "ctlcode.h"
+
+#include<netioapi.h>
 
 DRIVER_INITIALIZE   DriverEntry;
 DRIVER_UNLOAD       DriverUnload;

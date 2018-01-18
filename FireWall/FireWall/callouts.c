@@ -1,4 +1,8 @@
-#include "common.h"
+
+#include "callouts.h"
+#include "wall.h"
+#include "memtrace.h"
+
 
 extern HANDLE               gInjectHandle;
 extern PWALL_CONN_LIST      gConnList;

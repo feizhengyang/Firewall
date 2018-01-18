@@ -1,43 +1,22 @@
 #pragma once
 
-#define DBINARY_COMPATIBLE  0 
-#ifndef DNT
-#define DNT 
-#endif
-#ifndef DUNICODE
-#define DUNICODE 
-#endif
-#ifndef D_UNICODE
-#define D_UNICODE 
-#endif
-#ifndef DNDIS60
-#define DNT 
-#endif
-#ifndef DNDIS60
-#define DNT 
-#endif
-
-#define INITGUID
-#include "guiddef.h"
 #include<ndis.h>
 #include<ntddk.h>
 #include<fwpmk.h>
 #include<limits.h>
-#include <netioapi.h>
 #include "memtrace.h"
-#include "wall.h"
-#include "crc32.h"
-#include "memtrace.h"
-#include "ctlcode.h"
-#include "callouts.h"
-
 
 #pragma warning(disable:28197)
+
 #pragma warning(push)
 #pragma warning(disable:4201)       // unnamed struct/union
+
 #include "fwpsk.h"
+
 #pragma warning(pop)
 
+#define INITGUID
+#include <guiddef.h>
 
 #if 1
 #define LOG(x) \
